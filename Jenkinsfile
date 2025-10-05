@@ -12,7 +12,7 @@ pipeline {
             steps {
                 // Replace this with your actual build/test commands
                 sh 'echo "Running basic pipeline test for branch ${env.BRANCH_NAME}"'
-                sh 'cat README.md' // To show the content
+                sh 'cat notes' // To show the content
             }
         }
         stage('Build Complete') {
