@@ -11,8 +11,10 @@ pipeline {
         stage('Test Pipeline') {
             steps {
                 // Replace this with your actual build/test commands
-                sh 'echo "Running basic pipeline test for branch ${env.BRANCH_NAME}"'
-                sh 'cat notes' // To show the content
+                sh """
+                 echo "Running basic pipeline test for branch ${env.BRANCH_NAME}"
+                 cat notes
+                 """
             }
         }
         stage('Build Complete') {
